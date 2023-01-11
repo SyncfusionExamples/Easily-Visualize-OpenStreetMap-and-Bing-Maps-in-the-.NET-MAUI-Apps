@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Syncfusion.Maui.Maps;assembly=Syncfusion.Maui.Maps"
+             x:Class="TileLayer.MainPage">
+
+    <Grid>
+        <maps:SfMaps>
+            <maps:SfMaps.Layer>
+                <maps:MapTileLayer UrlTemplate="https://tile.openstreetmap.org/{z}/{x}/{y}.png" CanCacheTiles="True">
+                    <maps:MapTileLayer.Markers>
+                        <maps:MapMarkerCollection>
+                            <maps:MapMarker Latitude="-14.235004" Longitude="-51.92528"
+                                       IconWidth="10" IconHeight="10" IconFill="White"
+                                       IconStroke="Black" IconStrokeThickness="2" IconType="Circle" />
+                            <maps:MapMarker Latitude="51.16569" Longitude="10.451526"
+                                       IconWidth="10" IconHeight="10" IconFill="White"
+                                       IconStroke="Black" IconStrokeThickness="2" IconType="Circle" />
+                            <maps:MapMarker Latitude="-25.274398" Longitude="133.775136"
+                                       IconWidth="10" IconHeight="10" IconFill="White"
+                                       IconStroke="Black" IconStrokeThickness="2" IconType="Circle" />
+                            <maps:MapMarker Latitude="20.593684" Longitude="78.96288"
+                                       IconWidth="10" IconHeight="10" IconFill="White"
+                                       IconStroke="Black" IconStrokeThickness="2" IconType="Circle" />
+                            <maps:MapMarker Latitude="61.52401" Longitude="105.318756"
+                                       IconWidth="10" IconHeight="10" IconFill="White"
+                                       IconStroke="Black" IconStrokeThickness="2" IconType="Circle" />
+                        </maps:MapMarkerCollection>
+                        </maps:MapTileLayer.Markers>
+                   
+                    <maps:MapTileLayer.ZoomPanBehavior>
+                        <maps:MapZoomPanBehavior EnableDoubleTapZooming="True"/>
+                    </maps:MapTileLayer.ZoomPanBehavior>
+                </maps:MapTileLayer>
+            </maps:SfMaps.Layer>
+        </maps:SfMaps>
+    </Grid>
+</ContentPage>
